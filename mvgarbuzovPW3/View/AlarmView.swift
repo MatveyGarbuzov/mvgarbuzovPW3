@@ -16,11 +16,10 @@ class AlarmView: UIView {
     var heightOfView = 0.0, heightOfStack = 0.0
     
     convenience init(_ alarmTimeText: String = "",
-            _ countOfAlarms: Int = 0,
-            _ heightOfView: Double = 0.0) {
+            _ heightOfStack: Double = 0.0) {
         self.init()
         self.heightOfView = heightOfView
-        self.heightOfStack = heightOfView / Double(countOfAlarms)
+        self.heightOfStack = heightOfStack
         self.alarmTimeText = alarmTimeText
         setupAlarmView()
     }
@@ -40,6 +39,12 @@ class AlarmView: UIView {
         alarmTime.text = alarmTimeText
         alarmDays.text = days[Int.random(in: 7...9)] + days[Int.random(in: 0...6)]
         
+        
+//MARK:   Set minimum height of Stack Cell
+//        Haven't figured out how to do it better 🙁
+        if (heightOfStack < 80) {
+            heightOfStack = 80
+        }
         
         //MARK: Set fonts for Time and Day
         alarmTime.adjustsFontSizeToFitWidth = true

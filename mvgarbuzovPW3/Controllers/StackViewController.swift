@@ -14,7 +14,7 @@ class StackViewController: UIViewController {
     private var strHours = "", strMinutes = "", alarmTimeText = ""
     var hours = 0
     var minutes = 0
-    private let countOfAlarms = 10
+    private let countOfAlarms = 30
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,11 +70,11 @@ class StackViewController: UIViewController {
         arrayOfTime.sort()
         
         //MARK: Send data to alarmView
+        let heightOfStack = Double(heightOfView) / Double(countOfAlarms)
         for i in 0..<countOfAlarms {
             let alarm = AlarmView(
                 arrayOfTime[i],
-                countOfAlarms,
-                Double(heightOfView)
+                heightOfStack
             )
             stack.addArrangedSubview(alarm)
             alarm.pinWidth(to: scroll.widthAnchor)

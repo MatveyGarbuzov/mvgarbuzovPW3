@@ -11,7 +11,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    }
+    
+    // Set light mode for time, wifi, battery level, etc
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
 
 

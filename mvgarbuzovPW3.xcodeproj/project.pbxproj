@@ -15,6 +15,9 @@
 		1C51D80427256C52007432E1 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C51D80327256C52007432E1 /* StackViewController.swift */; };
 		1C51D80627256C7C007432E1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C51D80527256C7C007432E1 /* TableViewController.swift */; };
 		1C51D80827256C8D007432E1 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C51D80727256C8D007432E1 /* CollectionViewController.swift */; };
+		1C51D810272588B0007432E1 /* UIViewPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C51D80F272588B0007432E1 /* UIViewPin.swift */; };
+		1C51D81527259B1E007432E1 /* EyeCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C51D81427259B1E007432E1 /* EyeCellTableViewCell.swift */; };
+		1C51D8182725E6B8007432E1 /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C51D8172725E6B8007432E1 /* AlarmView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		1C51D80327256C52007432E1 /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		1C51D80527256C7C007432E1 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		1C51D80727256C8D007432E1 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		1C51D80F272588B0007432E1 /* UIViewPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewPin.swift; sourceTree = "<group>"; };
+		1C51D81427259B1E007432E1 /* EyeCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeCellTableViewCell.swift; sourceTree = "<group>"; };
+		1C51D8172725E6B8007432E1 /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +66,36 @@
 		1C51D7EC2725639C007432E1 /* mvgarbuzovPW3 */ = {
 			isa = PBXGroup;
 			children = (
+				1C51D81127258A17007432E1 /* View */,
 				1C51D7ED2725639C007432E1 /* AppDelegate.swift */,
 				1C51D7EF2725639C007432E1 /* SceneDelegate.swift */,
 				1C51D7F12725639C007432E1 /* ViewController.swift */,
-				1C51D80327256C52007432E1 /* StackViewController.swift */,
-				1C51D80727256C8D007432E1 /* CollectionViewController.swift */,
-				1C51D80527256C7C007432E1 /* TableViewController.swift */,
+				1C51D8162725A1A4007432E1 /* Controllers */,
+				1C51D80F272588B0007432E1 /* UIViewPin.swift */,
 				1C51D7F62725639E007432E1 /* Assets.xcassets */,
 				1C51D7F82725639E007432E1 /* LaunchScreen.storyboard */,
 				1C51D7FB2725639E007432E1 /* Info.plist */,
 			);
 			path = mvgarbuzovPW3;
+			sourceTree = "<group>";
+		};
+		1C51D81127258A17007432E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1C51D81427259B1E007432E1 /* EyeCellTableViewCell.swift */,
+				1C51D8172725E6B8007432E1 /* AlarmView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1C51D8162725A1A4007432E1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1C51D80327256C52007432E1 /* StackViewController.swift */,
+				1C51D80727256C8D007432E1 /* CollectionViewController.swift */,
+				1C51D80527256C7C007432E1 /* TableViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +170,11 @@
 				1C51D80827256C8D007432E1 /* CollectionViewController.swift in Sources */,
 				1C51D7F22725639C007432E1 /* ViewController.swift in Sources */,
 				1C51D80427256C52007432E1 /* StackViewController.swift in Sources */,
+				1C51D81527259B1E007432E1 /* EyeCellTableViewCell.swift in Sources */,
 				1C51D7EE2725639C007432E1 /* AppDelegate.swift in Sources */,
+				1C51D810272588B0007432E1 /* UIViewPin.swift in Sources */,
 				1C51D80627256C7C007432E1 /* TableViewController.swift in Sources */,
+				1C51D8182725E6B8007432E1 /* AlarmView.swift in Sources */,
 				1C51D7F02725639C007432E1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

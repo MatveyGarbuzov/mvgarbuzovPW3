@@ -33,7 +33,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let items = tabBarController.tabBar.items else {
             return
         }
-        // 123
+        
         let titles = ["Stack", "Table", "Collection"]
         
         for i in 0..<viewControllers.count {
